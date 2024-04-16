@@ -1,0 +1,255 @@
+body {
+  background-color: rgb(224, 224, 224);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 18px;
+  letter-spacing: 1.25px;
+  text-align: center;
+  animation: fadeIn 0.25s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px; /* Start off-screen */
+  left: 0;
+  background: #000; /* Choose a background color that makes sense for your site */
+  color: #fff; /* Text color */
+  padding: 8px;
+  z-index: 100; /* Ensure it's above other content */
+  transition: top 0.3s; /* Smooth transition for better UX */
+}
+
+.skip-link:focus {
+  top: 10px; /* Move into view when focused */
+}
+
+p {
+  margin: 20px;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+.mainpage h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Font stack for the heading */
+  font-size: 4rem; /* Large, eye-catching size */
+  color: black; /* Soft light grey for contrast */
+  text-align: center; /* Center the heading */
+  margin-top: 20px; /* Space at the top */
+  margin-bottom: 20px; /* Space at the bottom */
+  padding: 10px 0; /* Padding for visual comfort */
+  border-radius: 10px; /* Rounded corners for a soft look */
+}
+
+/* Responsive typography */
+@media (max-width: 768px) {
+  .mainpage h1 {
+      font-size: 2rem; /* Smaller font size for smaller screens */
+  }
+}
+
+
+
+.mixbutton {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #f4f4f4;
+  margin: 0 0.3em 0.3em 0;
+  text-decoration: none;
+  text-align: center;
+  font-size: medium;
+  margin: 15px;
+}
+
+.infodiv {
+  display: grid;
+  grid-template-columns: 450px 450px 450px;
+  margin: 25px;
+  row-gap: 10px;
+  justify-content: center;
+}
+
+.classic_all {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.recipepics {
+  margin: 10px;
+  border: 1.5px ridge black;
+  text-align: center;
+  background-color: whitesmoke;
+  height: 100%;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+.recipepics h2 {
+  font-size: 20px;
+  text-decoration: underline;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.recipepics h3 {
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+.recipepics img {
+  max-width: 100%;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+.infodiv ol {
+  list-style-type: decimal;
+  padding-left: 35px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.infodiv ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  background-color: black; /* Sets the background of the nav bar */
+  list-style-type: none; /* Removes bullet points */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  overflow: hidden; /* Keeps the <ul> contained within its boundaries */
+  text-align: left; /* Aligns the list items to the left */
+}
+
+nav ul li {
+  display: inline-block; /* Displays list items in a row */
+  margin-right: 20px; /* Space between the menu items */
+}
+
+nav ul li a {
+  text-decoration: none; /* Removes underline from links */
+  color: rgb(255, 255, 255); /* Sets the text color to dark red */
+  padding: 10px 15px; /* Adds padding around the text */
+  display: block; /* Allows padding to affect the link area */
+}
+
+nav ul li a.active {
+  background-color: red; /* Background color for the active link */
+}
+
+/* Navigation Links Hover Effect */
+.nav li a {
+  transition: color 0.3s;
+}
+
+.nav li a:hover, .nav li a:focus {
+  color: #ff6347; /* or any other color */
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10px;
+  max-width: 80%;
+  margin: 20px auto;
+  padding: 10px;
+  border: 1.5px ridge black;
+  text-align: left;
+  background-color: whitesmoke;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+.profile-image img {
+  width: 100%;
+  height: auto;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.profile-description {
+  padding: 10px;
+  align-content: center;
+}
+
+.profile-description a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.profile-description a:hover {
+  text-decoration: underline;
+}
+
+.profile-description a:visited {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.mainpage img {
+  border: 5px solid #000; /* Black border, 5 pixels thick */
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column; /* Stack cards vertically */
+  padding: 20px;
+}
+
+.card {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  background-color: #f9f9f9;
+  margin-bottom: 10px; /* Add margin only at the bottom */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 150px;
+  height: 150px;
+  margin-right: 20px;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+.content h2 {
+  margin: 10px;
+  color: #333;
+}
+
+.content p {
+  margin: 10px 10px 10px 10px;
+  line-height: 1.5;
+  font-size: small;
+}
+
+.card:hover {
+  transform: scale(1.01);
+}
+
+#clickableCard1, #clickableCard2, #clickableCard3 {
+  cursor: pointer;
+}

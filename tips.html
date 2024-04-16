@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <title>About</title>
+</head>
+
+<body>
+    <a href = "#main-content" class="skip-link">Skip to Main Content</a>
+    <header>
+        <nav>
+            <ul class = "nav">
+                <li><a href = "index.html">Home</a></li>
+                <li><a class = "active" href = "tips.html">Tips & Tricks</a></li>
+                <li><a href = "recipes.html">Recipes</a></li>
+                <li><a href = "about.html">About</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main id="main-content">
+        <h1>Tips & Tricks</h1>
+        <p>Turning out top-notch drinks at home takes more than good intentions. There are the techniques to master and methods to apply the next time you start mixing cocktails.</p>
+        <div class="card-container">
+            <div class="card" id="clickableCard1">
+                <img src="iimages/shaker.jpg" alt="Shaker Selection">
+                    <div class="content">
+                    <h2>Boston Shaker vs. Cobbler Shaker vs. French Shaker: The Main Differences</h2>
+                    <p>Cocktail shakers, essential tools in any bartender's kit, come in various styles, each with unique attributes and historical backgrounds. The Boston Shaker, available in two variants—glass-on-tin and tin-on-tin—is preferred for its durability and efficiency, especially in busy bars. The glass-on-tin style offers a visual appeal during mixing but is prone to breaking, whereas the all-metal tin-on-tin version provides a robust alternative, maintaining colder temperatures due to better thermal properties and is less likely to shatter. In contrast, the Cobbler Shaker, which debuted in 1884 and named after a popular cocktail style, features a three-piece design including a built-in strainer. While iconic, its design can be cumbersome during busy shifts, often requiring a secondary strainer to catch finer particles. The Parisian Shaker, or French Shaker, strikes a balance between the Cobbler and Boston styles, offering aesthetic appeal and functional design without a built-in strainer, making it less ideal for high-volume settings but a stylish option for home bars. Each shaker type offers distinct advantages depending on the setting and the bartender's needs, whether prioritizing efficiency, style, or a mix of both.</p>
+                    </div>
+            </div>
+            <div class="card" id="clickableCard2">
+                <img src="iimages/martini-glasses.jpg" alt="Martini glassess">
+                <div class="content">
+                <h2>What's the Best Martini Glass?</h2>
+                <p>Al Sotack, a Brooklyn bar owner, prefers the coupe glass for its aesthetic and ergonomic qualities. The coupe, originally used for Champagne in the 1830s, has a storied history in cocktail culture. The classic V-shaped Martini glass, popularized in the 1920s, is iconic but criticized by some bartenders for its impractical design that is prone to spillage. The Nick & Nora glass, revived in the 1980s by Dale DeGroff, is favored for its elegant, spill-resistant design. Overall, there's a diversity of opinions on the best glass for a Martini, reflecting broader trends in bar culture and personal preference among bartenders.</p>
+                </div>
+            </div>
+            <div class="card" id="clickableCard3">
+                <img src="iimages/jiggers.jpg" alt="Best jiggers">
+                <div class="content">
+                    <h2>The 8 Best Jiggers of 2024, According to Pro Bartenders</h2>
+                    <p>The Cocktail Kingdom Leopold Jigger is recognized as the best overall for its weighted feel and various finishes, though its copper-plated option isn't dishwasher-safe. For value, the OXO Steel Angled Measuring Jigger offers a cost-effective, versatile choice with clear markings, albeit less attractive. The most luxurious option, the Match Pewter Jigger, features handcrafted design but is expensive and requires hand-washing. Beginners might prefer the Barfly Japanese-Style Jigger, which is affordable, dishwasher-safe, and aesthetically pleasing, though somewhat lightweight. The Piña Barware Slim Stainless Steel Jigger is the top Japanese pick, praised for its accuracy and comfort but with slightly hard-to-read exterior markings. The True Trio Multi Unit Measured Jigger stands out for its ergonomic design and clarity in measurements, though it is a bit pricier. The Cocktail Kingdom's Japanese-Style Jigger is celebrated for its durability and balanced feel, yet it also requires hand-washing. Lastly, the Yukiwa Stainless Steel Seamless Jigger wins for best design, offering elegance and ease of use, though it lacks measurement markings.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+<script>
+    document.getElementById('clickableCard1').addEventListener('click', function() {
+    window.location.href = 'https://www.liquor.com/boston-vs-cobbler-vs-parisian-shaker-7738267';
+});
+    document.getElementById('clickableCard2').addEventListener('click', function() {
+    window.location.href = 'https://www.liquor.com/best-martini-glass-7547546';
+});
+document.getElementById('clickableCard3').addEventListener('click', function() {
+    window.location.href = 'https://www.liquor.com/best-jiggers-5096043';
+});
+</script>
+</body>
+</html>
